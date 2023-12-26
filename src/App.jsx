@@ -1,14 +1,13 @@
 
 import './App.css'
-import Signin from './pages/signin/signin'
-import RegisterComponent from './pages/signup/Register'
+
+import Routs from './router/ReactRouter'
 
 function App() {
 
   return (
 <>
-<Signin/>
-<RegisterComponent/>
+<Routs/>
 </>
   )
 }
