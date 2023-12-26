@@ -1,5 +1,6 @@
 
 import './App.css'
+import Chat from './pages/MessagerPage/messager'
 
 import Routs from './router/ReactRouter'
 
