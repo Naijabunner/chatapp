@@ -83,3 +83,59 @@ form{
   50% { opacity: 1; }
   100% { opacity: 0.1; }
 }
+.chatInfo , .ActivechatInfo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #3B374E;
+  margin: 4%;
+  padding: 4%;
+}
+.chatInfo img, .ActivechatInfo img{
+  width: 5vmin;
+  height: 10%;
+  margin-right: 4%;
+}
+.chatInfo p, .ActivechatInfo p{
+  margin: 0;
+}
+.messanger_page_wrapper{
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ChatListWrapper{
+  position: inherit;
+  background-color: #1B1923;
+  width: 25%;
+  min-height: 85vh;
+  max-height: 85vh;
+
+}
+.ChatListWrapper h3{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 3vmin;
+}
+.ChatList{
+
+}
+.chatbox{
+  background-color: #ffffff;
+  width: 60%;
+height: 85vh;
+  
+}
+.ActivechatInfo{
+  position: absolute;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: #0D0D31;
+}
