@@ -3,6 +3,7 @@ import avatarTwo from "/src/assets/Images/avtwo.png";
 import avatarThree from "/src/assets/Images/avthree.png";
 import avatarFour from "/src/assets/Images/avfour.png";
 import ChatComp from "../../components/chats";
+import WelcomeMessage from "../../components/wlcome";
 const Chat = () => {
   const chartData = [
     { img: avatarOne, name: "Danny", active: "" },
@@ -26,7 +27,9 @@ const Chat = () => {
             <p>active </p>
           </div>
         </div>
-        <div className="chatbox"></div>
+        <div className="chatbox">
+            <WelcomeMessage/>
+        </div>
       </div>
     </>
   );

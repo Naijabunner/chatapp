@@ -100,12 +100,14 @@ form{
   margin: 0;
 }
 .messanger_page_wrapper{
+  background-color: var(--backgroudcolor);
   color: #ffffff;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: 3vmin;
 }
 
 .ChatListWrapper{
@@ -126,7 +128,7 @@ form{
 
 }
 .chatbox{
-  background-color: #ffffff;
+  position: relative;
   width: 60%;
 height: 85vh;
   
@@ -138,4 +140,26 @@ height: 85vh;
   justify-content: center;
   bottom: 0;
   background-color: #0D0D31;
+}
+.welcometab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  background-color: #0A0A14;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+.welcometab span{
+  color:#441AD3;
+}
+.welcometab img{
+  width: 70%;
+}
+.welcometab h6{
+  font-size: 4vmin;
+}
+.welcometab :is(h6,img, p){
+  margin: 0;
 }
