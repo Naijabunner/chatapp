@@ -1,59 +1,69 @@
-:root{
-  --bodycolor:#41404F;
-  --backgroudcolor:#0A0A14;
-  --btncolor:#4D0EFF;
-  --spancolor:#4624a5;
+:root {
+  --bodycolor: #41404F;
+  --backgroudcolor: #0A0A14;
+  --btncolor: #4D0EFF;
+  --spancolor: #4624a5;
   --inputborder: 2px solid rgb(61, 58, 139);
   --iconwidth: 5vmin;
 }
 
-body{
+body {
   background-color: var(--bodycolor);
   padding: 0;
   margin: 0;
   width: 100vw;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
-.form_wrapper{
+
+.form_wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: var(--backgroudcolor);
   color: white;
   width: 60vmin;
   padding: 2.5% 1% 5%;
   min-height: fit-content;
 }
-.form_wrapper , form{
+
+.form_wrapper,
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
-form{
+
+form {
   position: relative;
 }
-.form_wrapper:first-child{
+
+.form_wrapper:first-child {
   font-size: 5vmin;
 }
-.form_wrapper form input, .form_wrapper:first-child{
+
+.form_wrapper form input,
+.form_wrapper:first-child {
   margin-bottom: 1rem;
   color: #ffffff;
 }
-.form_wrapper form input{
+
+.form_wrapper form input {
   width: 45vmin;
   line-height: 7vmin;
   border-radius: 5px;
   border: var(--inputborder);
   background: none;
 }
-.form_wrapper form input::placeholder{
+
+.form_wrapper form input::placeholder {
   color: #ffffff;
   font-size: 3vmin;
   padding-left: 1%;
 }
-.form_wrapper form button{
+
+.form_wrapper form button {
   width: 47vmin;
   padding: 2% 0%;
   font-size: 4vmin;
@@ -62,29 +72,43 @@ form{
   color: #ffffff;
   border-radius: 5px;
 }
-.form_wrapper h3{
-  margin:0 0% 10%;
+
+.form_wrapper h3 {
+  margin: 0 0% 10%;
 }
-.loading_img{
+
+.loading_img {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: var(--backgroudcolor);
 }
-.loading_img img{
+
+.loading_img img {
   animation-name: fade;
   animation-delay: 2s;
   animation-duration: 3s;
   animation-timing-function: cubic-bezier(1, 0.02, 0.4, 0.98);
   animation-iteration-count: infinite;
 }
+
 @keyframes fade {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.1; }
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
 }
-.chatInfo , .ActivechatInfo{
+
+.chatInfo,
+.ActivechatInfo {
   position: relative;
   display: flex;
   align-items: center;
@@ -92,15 +116,20 @@ form{
   margin: 4%;
   padding: 4%;
 }
-.chatInfo img, .ActivechatInfo img{
+
+.chatInfo img,
+.ActivechatInfo img {
   width: 5vmin;
   /* height: 10%; */
   margin-right: 4%;
 }
-.chatInfo p, .ActivechatInfo p{
+
+.chatInfo p,
+.ActivechatInfo p {
   margin: 0;
 }
-.messanger_page_wrapper{
+
+.messanger_page_wrapper {
   background-color: var(--backgroudcolor);
   color: #ffffff;
   position: relative;
@@ -111,7 +140,7 @@ form{
   font-size: 3vmin;
 }
 
-.ChatListWrapper{
+.ChatListWrapper {
   position: inherit;
   background-color: #1B1923;
   width: 25%;
@@ -119,20 +148,22 @@ form{
   max-height: 85vh;
 
 }
-.ChatListWrapper h3{
+
+.ChatListWrapper h3 {
   display: flex;
   justify-content: center;
   color: white;
   font-size: 3vmin;
 }
-.chatbox{
+
+.chatbox {
   position: relative;
   width: 60%;
-height: 85vh;
-background-color: #0a0ae4;
-  
+  height: 85vh;
+
 }
-.ActivechatInfo{
+
+.ActivechatInfo {
   position: absolute;
   width: 80%;
   display: flex;
@@ -140,7 +171,8 @@ background-color: #0a0ae4;
   bottom: 0;
   background-color: #0D0D31;
 }
-.welcometab{
+
+.welcometab {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,61 +182,73 @@ background-color: #0a0ae4;
   top: 20%;
   left: 25%;
 }
-.MessagesWrapper{
+
+.MessagesWrapper {
   margin: 1% 3%;
 }
-.MessagesHeader, .MessageProfile{
-display: flex;
-justify-content: space-between;
-align-items: center;
+
+.MessagesHeader,
+.MessageProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.MessageProfile img, .MessageProfile p {
-width: var(--iconwidth);
-margin-right: 5%;
+
+.MessageProfile img,
+.MessageProfile p {
+  width: var(--iconwidth);
+  margin-right: 5%;
 }
-.MessagesLogout{
-  background-color: #9A85FB ;
+
+.MessagesLogout {
+  background-color: #9A85FB;
   color: #ffffff;
   padding: 3px;
   border-radius: 3px;
 }
-.MessagesContainer{
+
+.MessagesContainer {
   background-color: gray;
   width: 100%;
   height: 65vh;
 }
-.MessagesFooter{
-display: flex; 
-align-items: center;
+
+.MessagesFooter {
+  display: flex;
+  align-items: center;
 
 }
-.MessagesInput input{
+
+.MessagesInput input {
   width: 80%;
   background-color: #3B374E;
-border: none;
-outline: none;
-padding-left: 3%;
-color: #ffffff;
+  border: none;
+  outline: none;
+  padding-left: 3%;
+  color: #ffffff;
 }
-.MessagesFooter i{
+
+.MessagesFooter i {
   margin-top: 3%;
   font-size: larger;
 }
-.MessagesFooter button{
+
+.MessagesFooter button {
   border-radius: 20px 0 0 20px;
   width: 15%;
   border: none;
-    background-color: #9A85FB;
-    color: #403f3f;
-cursor: pointer;
+  background-color: #9A85FB;
+  color: #403f3f;
+  cursor: pointer;
 }
-.MessagesInput input::placeholder{
+
+.MessagesInput input::placeholder {
   color: #787878;
   padding: 3%;
   font-size: 2.5vmin;
 }
 
-.MessagesInput{
+.MessagesInput {
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -215,15 +259,19 @@ cursor: pointer;
   overflow: hidden;
   padding: auto;
 }
-.welcometab span{
-  color:#441AD3;
+
+.welcometab span {
+  color: #441AD3;
 }
-.welcometab img{
+
+.welcometab img {
   width: 70%;
 }
-.welcometab h6{
+
+.welcometab h6 {
   font-size: 4vmin;
 }
-.welcometab :is(h6,img, p){
+
+.welcometab :is(h6, img, p) {
   margin: 0;
 }

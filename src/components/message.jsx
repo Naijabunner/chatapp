@@ -1,29 +1,34 @@
 import avatarTwo from "/src/assets/Images/avtwo.png";
 
 const MessagesComp = () => {
-    return ( <>
-    <div className="MessagesWrapper">
+  return (
+    <>
+      <div className="MessagesWrapper">
+{/* header */}
         <div className="MessagesHeader">
-<div className="MessageProfile">
-<img src={avatarTwo} alt="" />
-<p>Danny</p>
-            </div>
-            <div className="MessagesLogout">
+          <div className="MessageProfile">
+            <img src={avatarTwo} alt="" />
+            <p>Danny</p>
+          </div>
+          <div className="MessagesLogout">
             <i className="fa-solid fa-power-off"></i>
-            </div>
+          </div>
         </div>
-        <div className="MessagesContainer">
-            
-        </div>
+{/* BOdy */}
+        <div className="MessagesContainer"></div>
+{/* Footer */}
         <div className="MessagesFooter">
-        <i className="fa-solid fa-face-smile"></i>
-            <div className="MessagesInput">
-                <input type="text" placeholder="Type Your Messages Here" />
-                <button><i className="fa-regular fa-paper-plane"></i></button>
-            </div>
+          <i className="fa-solid fa-face-smile"></i>
+          <div className="MessagesInput">
+            <input type="text" placeholder="Type Your Messages Here" />
+            <button>
+              <i className="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
         </div>
-    </div>
-    </> );
-}
- 
+      </div>
+    </>
+  );
+};
+
 export default MessagesComp;
