@@ -131,6 +131,7 @@ form{
   position: relative;
   width: 60%;
 height: 85vh;
+background-color: #0a0ae4;
   
 }
 .ActivechatInfo{
@@ -141,7 +142,7 @@ height: 85vh;
   bottom: 0;
   background-color: #0D0D31;
 }
-.welcometab, .MessagesWrapper{
+.welcometab{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,6 +151,10 @@ height: 85vh;
   position: absolute;
   top: 20%;
   left: 25%;
+}
+.MessagesWrapper{
+
+
 }
 .welcometab span{
   color:#441AD3;
