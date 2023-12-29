@@ -141,7 +141,7 @@ height: 85vh;
   bottom: 0;
   background-color: #0D0D31;
 }
-.welcometab{
+.welcometab, .MessagesWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
