@@ -14,7 +14,7 @@ const MessagesComp = () => {
             <i className="fa-solid fa-power-off"></i>
           </div>
         </div>
-{/* BOdy */}
+{/* Body */}
         <div className="MessagesContainer"></div>
 {/* Footer */}
         <div className="MessagesFooter">
